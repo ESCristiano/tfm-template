@@ -1,0 +1,6 @@
+[submodule "exp-m-step-eval-tfm/trusted-firmware-m"]
+	path = exp-m-step-eval-tfm/trusted-firmware-m
+	url = https://github.com/ESCristiano/trusted-firmware-m.git
+[submodule "trusted-firmware-m"]
+	path = trusted-firmware-m
+	url = https://github.com/ESCristiano/trusted-firmware-m.git
