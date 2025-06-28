@@ -28,9 +28,6 @@
 #include "stdio.h"
 #include "stdlib.h"
 
-// #include "mstp_eval.h"
-// #include "mstp_poc.h"
-
 int __io_putchar(int ch)
 {
  uint8_t c[1];
@@ -69,14 +66,9 @@ int main(void)
 
   /* Initialize all configured peripherals */
   // MX_GPIO_Init();
-  // We have to comment MX_LPUART1_UART_Init to run on RENODE
   MX_LPUART1_UART_Init();
 
   printf("Hello NS World!!\r\n");
- 
-  // mstp_eval();
-  // mstp_poc();
-
   printf("End NS World!!\r\n");
 
   while(1);

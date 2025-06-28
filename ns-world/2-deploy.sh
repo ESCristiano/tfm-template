@@ -33,7 +33,6 @@ echo "Deploying for target $TARGET with profile $PROFILE"
 
 ORIGINAL_DIR="$(pwd)"
 cd "$(dirname "${COPILOT}")"
-sudo ${COPILOT} -d -t ${TARGET} -p ${PROFILE}
+# Path passed explicitly for nix+Ubuntu compatibility (https://unix.stackexchange.com/a/83194)
+sudo env "PATH=$PATH" ${COPILOT} -d -t ${TARGET} -p ${PROFILE}
 cd "${ORIGINAL_DIR}"
-
-
