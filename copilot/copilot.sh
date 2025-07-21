@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 ROOT="$(realpath .)"
 TFM="${ROOT}/../trusted-firmware-m"
-NSPE_MSTP_APP=${ROOT}/../exp-m-step-eval-tfm
+NSPE_MSTP_APP=${ROOT}/../ns-world
 MSTP=${ROOT}/../m-step
 
 # Default values
